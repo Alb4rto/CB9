@@ -28,6 +28,13 @@ const paragrGen = (data) => {
   return paragrEl;
 };
 
+const errorGen = () => {
+  const errorEl = document.createElement("p");
+  errorEl.textContent = "pagina non trovata";
+
+  return errorEl;
+};
+
 const rootEl = document.querySelector(".root-element");
 const container = containerGen();
 
@@ -40,4 +47,8 @@ fetch("https://fakestoreapi.com/products/1")
 
     container.append(title, image, paragrafo);
     rootEl.append(container);
+  })
+  .catch(() => {
+    const error = errorGen();
+    rootEl.append(error);
   });

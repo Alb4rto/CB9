@@ -1,0 +1,10 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.div {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

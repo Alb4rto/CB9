@@ -1,0 +1,13 @@
+.task {
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.Xbutton {
+  background-color: rgb(243, 240, 240);
+  border-radius: 10px;
+}
+
+.Xbutton:hover {
+  background-color: aqua;
+}

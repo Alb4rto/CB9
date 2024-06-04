@@ -1,0 +1,17 @@
+.input-task {
+  border: none;
+  outline: none;
+  padding: 8px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.button-task {
+  padding: 8px;
+  background-color: cadetblue;
+  border: none;
+  border-radius: 4px;
+}
+
+.button-task:hover {
+  background-color: rgb(54, 58, 57);
+}

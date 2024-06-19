@@ -1,0 +1,36 @@
+.carouselContainer {
+  background-color: black;
+  position: relative;
+  width: 90vw;
+  .arrowContainer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+    .Icon {
+      color: rgb(2, 240, 240);
+      font-size: 3rem;
+      cursor: pointer;
+      filter: drop-shadow(0 0 100px black);
+      pointer-events: all;
+    }
+  }
+
+  .carousel {
+    display: flex;
+    gap: 6px;
+    width: 99%;
+    overflow: scroll;
+    box-sizing: border-box;
+    padding-left: 30px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
